@@ -24,7 +24,7 @@ module.exports = {
     ],
   },
   devServer: {
-    // 公共路径 打包后资源可以访问的路径  public:'/mypath/'  ==>  http://localhost:8080/mypath/index.bundle.js
+    // 公共路径 打包后资源可以访问的路径  public:'/mypath/'  ==>  http://localhost:8080/src/index.html 可以访问
     publicPath: '/',
     // webpack-dev-server会使用当前的路径作为请求的资源路径，但是你可以通过指定content base来修改这个默认行为:
     // 本地服务器在哪个目录搭建页面，一般我们在当前目录即可

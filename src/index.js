@@ -1,10 +1,17 @@
 import React, {} from 'react';
 import ReactDOM from 'react-dom';
 
+import NavLink from './pages/nav';
+import PageA from './pages/page_a';
+import PageB from './pages/page_b';
+import PageC from './pages/page_c';
+
+import {BrowserRouter as Router, Route,} from 'react-router-dom';
+
 class App extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.instance = '点击按钮';
+    this.instance = '点击按钮123';
     this.state = {
       a: 1,
     };
@@ -23,6 +30,21 @@ class App extends React.PureComponent {
         >
           {this.instance}
         </button>
+        <Router>
+          <div>
+            <NavLink />
+            <Route component={PageA}
+              exact
+              path="/"
+            />
+            <Route component={PageB}
+              path="/b"
+            />
+            <Route component={PageC}
+              path="/c"
+            />
+          </div>
+        </Router>
       </div>
     );
   }
