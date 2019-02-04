@@ -1,10 +1,13 @@
-## ESLint配置 for React
-0. 基础包ESLint的安装
-    - "babel-eslint": "8.2.3",
-    - "eslint": "4.19.1",
-    - "eslint-plugin-react": "7.8.2",
+## ESLint 配置 for React
 
-1. 将下面的内容copy到 .eslintrc 文件中 (删除其中的注释)
+0. 基础包 ESLint 的安装
+
+   - "babel-eslint": "8.2.3",
+   - "eslint": "4.19.1",
+   - "eslint-plugin-react": "7.8.2",
+
+1. 将下面的内容 copy 到 .eslintrc 文件中 (删除其中的注释)
+
 ```js
 {
   "env": {
@@ -126,3 +129,5 @@
   }
 }
 ```
+
+## 预渲染测试 (pre-render)

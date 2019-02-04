@@ -1,4 +1,4 @@
-import React, {} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 
 import NavLink from './pages/nav';
@@ -6,7 +6,7 @@ import PageA from './pages/page_a';
 import PageB from './pages/page_b';
 import PageC from './pages/page_c';
 
-import {BrowserRouter as Router, Route,} from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends React.PureComponent {
   constructor(props) {
@@ -17,32 +17,22 @@ class App extends React.PureComponent {
     };
   }
 
-  handleClick({ target,}) {
+  handleClick({ target }) {
     console.log(target.dataset);
     console.log('this = ' + this);
   }
   render() {
     return (
       <div>
-        <button
-          data-a={'hello react'}
-          onClick={this.handleClick}
-        >
+        <button data-a={'hello react'} onClick={this.handleClick}>
           {this.instance}
         </button>
         <Router>
           <div>
             <NavLink />
-            <Route component={PageA}
-              exact
-              path="/"
-            />
-            <Route component={PageB}
-              path="/b"
-            />
-            <Route component={PageC}
-              path="/c"
-            />
+            <Route component={PageA} exact path="/" />
+            <Route component={PageB} path="/b" />
+            <Route component={PageC} path="/c" />
           </div>
         </Router>
       </div>
@@ -61,4 +51,3 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // }
 
 // Hello();
-
