@@ -1,6 +1,7 @@
 const path = require('path');
 // 将脚本自动注入到指定html文件的插件 yarn add html-webpack-plugin --dev
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HelloWorldWebpackPlugin = require('./my-webpack-plugin/helloworld.plugin');
 
 module.exports = {
   // webpack 文件打包的入口 可以是 Array, Object, String 这里是单文件入口
@@ -22,8 +23,8 @@ module.exports = {
         loader: 'babel-loader',
       },
       {
-        test:/\.css$/,
-        loader:['style-loader','css-loader',],
+        test: /\.css$/,
+        loader: ['style-loader', 'css-loader'],
       },
     ],
   },
@@ -43,6 +44,10 @@ module.exports = {
     historyApiFallback: true,
   },
   plugins: [
+    // 自定义插件的使用
+    new HelloWorldWebpackPlugin({
+      options: true,
+    }),
     new HtmlWebpackPlugin({
       template: './src/index.html', // 模板文件
       filename: 'index.html', // 注入脚本后文件的名称
