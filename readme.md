@@ -1,3 +1,9 @@
+## 该工程功能
+1. 探索React.PureComponent
+2. 探索webpack+react的配置学习
+
+## react + webpack 学习
+
 ## ESLint 配置 for React
 
 0. 基础包 ESLint 的安装
@@ -131,3 +137,5 @@
 ```
 
 ## 预渲染测试 (pre-render)
+
+## 学会写 Webpack 插件 (my-webpack-plugin)

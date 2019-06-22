@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink,} from 'react-router-dom';
+import { NavLink, } from 'react-router-dom';
 import './nav.css';
 export default class NavBar extends React.PureComponent {
   render() {
@@ -19,6 +19,11 @@ export default class NavBar extends React.PureComponent {
           to="/c"
         >
           PageC
+        </NavLink>
+        <NavLink exact
+          to="/style"
+        >
+          StyledComponents
         </NavLink>
       </div>
     );
