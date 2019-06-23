@@ -1,6 +1,8 @@
 ## 该工程功能
 1. 探索React.PureComponent
 2. 探索webpack+react的配置学习
+3. styled-components 的学习
+4. rrweb屏幕录制功能的学习 (https://github.com/rrweb-io/rrweb/blob/master/guide.zh_CN.md)
 
 ## react + webpack 学习
 

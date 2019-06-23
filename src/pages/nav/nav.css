@@ -1,3 +1,10 @@
 .blue {
   color: blue;
 }
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 50px;
+}

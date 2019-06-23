@@ -6,8 +6,9 @@ import PageA from './pages/page_a';
 import PageB from './pages/page_b';
 import PageC from './pages/page_c';
 import StyledComponentsContainer from './styled-components-demo/container';
+import RRWebComponent from './rrweb-demo/test-rrweb';
 
-import { BrowserRouter as Router, Route, } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
 
 class App extends React.PureComponent {
   constructor(props) {
@@ -33,19 +34,24 @@ class App extends React.PureComponent {
         <Router>
           <div>
             <NavLink />
-            <Route component={PageA}
-              exact
-              path="/"
-            />
-            <Route component={PageB}
-              path="/b"
-            />
-            <Route component={PageC}
-              path="/c"
-            />
-            <Route component={StyledComponentsContainer}
-              path="/style"
-            />
+            <Switch>
+              <Route component={PageA}
+                exact
+                path="/"
+              />
+              <Route component={PageB}
+                path="/b"
+              />
+              <Route component={PageC}
+                path="/c"
+              />
+              <Route component={StyledComponentsContainer}
+                path="/style"
+              />
+              <Route component={RRWebComponent}
+                path="/rrweb"
+              />
+            </Switch>
           </div>
         </Router>
       </div>

@@ -40,6 +40,8 @@
   "dependencies": {
     "react": "16.4.0",
     "react-dom": "16.4.0",
-    "react-router-dom": "4.2.2"
+    "react-router-dom": "4.2.2",
+    "rrweb": "^0.7.16",
+    "rrweb-player": "^0.3.11"
   }
 }

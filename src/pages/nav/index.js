@@ -4,7 +4,7 @@ import './nav.css';
 export default class NavBar extends React.PureComponent {
   render() {
     return (
-      <div>
+      <div className="nav-container">
         <NavLink exact
           to="/"
         >
@@ -24,6 +24,11 @@ export default class NavBar extends React.PureComponent {
           to="/style"
         >
           StyledComponents
+        </NavLink>
+        <NavLink exact
+          to="/rrweb"
+        >
+          rrweb
         </NavLink>
       </div>
     );
